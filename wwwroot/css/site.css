@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Segoe UI, Arial, sans-serif;
+    background: #f4f6fb;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #4d3b21;
+    padding: 15px;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+    nav a:hover {
+        color: #93c5fd;
+    }
+
+/* MAIN */
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+.contact-card {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background: #1e40af;
+    }
+
+.success-message {
+    display: none;
+    background: #d1fae5;
+    color: #065f46;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+    .success-message.show {
+        display: block;
+        animation: fade 0.4s ease;
+    }
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #e5e7eb;
+}

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Personal Website</title>
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">
+                <i class="fa-solid fa-briefcase"></i> MyPortfolio
+            </h1>
+            <nav>
+                <a asp-action="Index">Home</a>
+                <a asp-action="About">About</a>
+                <a asp-action="Contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>© 2025 | Built with ASP.NET Core MVC</p>
+    </footer>
+
+</body>
+</html>
